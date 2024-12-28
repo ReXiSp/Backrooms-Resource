@@ -1,0 +1,25 @@
+name: Update Hash
+on:
+  workflow_dispatch:
+  push:
+
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive ZIP
+        run: |
+          zip -r assets.zip assets pack.mcmeta pack.png
+      - name: Calculate Hash
+        run: |
+          sha1=($(sha1sum pack.mcmeta))
+          echo $sha1 > hash.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'ReXiSp'
+          git config --global user.email 'ReXiSp@users.noreply.github.com'
+          git commit -am "Generate Hash"
+          git push
