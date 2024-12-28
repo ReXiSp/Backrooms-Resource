@@ -12,14 +12,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Archive ZIP
         run: |
-          zip -r assets.zip assets pack.mcmeta pack.png
+          zip -r resources.zip assets pack.mcmeta pack.png
       - name: Calculate Hash
         run: |
           sha1=($(sha1sum pack.mcmeta))
           echo $sha1 > hash.txt
       - name: Commit report
         run: |
-          git config --global user.name 'ReXiSp'
-          git config --global user.email 'ReXiSp@users.noreply.github.com'
-          git commit -am "Generate Hash"
+          git add -f resources.zip
+          git add -f hash.txt
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -am "Upload ZIP and Generate Hash"
           git push
