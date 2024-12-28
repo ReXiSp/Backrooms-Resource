@@ -15,7 +15,7 @@ jobs:
           zip -r resources.zip assets pack.mcmeta pack.png
       - name: Calculate Hash
         run: |
-          sha1=($(sha1sum pack.mcmeta))
+          sha1=($(sha1sum resources.zip))
           echo $sha1 > hash.txt
       - name: Commit report
         run: |
