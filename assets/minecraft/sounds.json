@@ -1,0 +1,26 @@
+{
+  "music_disc.11": {
+    "sounds": [
+      {
+        "name": "records/11",
+        "stream": true
+      }
+    ]
+  },
+  "backrooms.pig": {
+    "sounds": [
+      {
+        "name": "backrooms/pig",
+        "stream": true
+      }
+    ]
+  },
+  "backrooms.pc_startup": {
+    "sounds": [
+      {
+        "name": "backrooms/pc_startup",
+        "stream": true
+      }
+    ]
+  }
+}
