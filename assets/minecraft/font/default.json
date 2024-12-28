@@ -1,0 +1,67 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:shop/gold_nugget.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee00"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/cooked_beef.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee01"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:shop/flash_light.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee02"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/almond_water.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee03"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/lucky_milk.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee04"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/pistol.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee05"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/bottled_lightning.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+               "\uee06"
+            ]
+        }
+    ]
+}

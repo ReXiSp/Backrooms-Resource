@@ -7,11 +7,10 @@
       }
     ]
   },
-  "backrooms.pig": {
+  "backrooms.shoot": {
     "sounds": [
       {
-        "name": "backrooms/pig",
-        "stream": true
+        "name": "backrooms/shoot"
       }
     ]
   },

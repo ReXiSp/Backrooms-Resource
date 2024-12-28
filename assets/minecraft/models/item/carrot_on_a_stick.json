@@ -62,13 +62,19 @@
       "predicate": {
         "custom_model_data": 10
       },
-      "model": "minecraft:item/scissors_close"
+      "model": "minecraft:item/shears"
     },
     {
       "predicate": {
         "custom_model_data": 11
       },
       "model": "minecraft:item/flash_light2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "minecraft:item/scissors_close"
     }
   ]
 }
