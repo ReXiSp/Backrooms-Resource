@@ -19,8 +19,8 @@ jobs:
           echo $sha1 > hash.txt
       - name: Commit report
         run: |
-          git add assets.zip
-          git add hash.txt
+          git add -f assets.zip
+          git add -f hash.txt
           git config --global user.name 'ReXiSp'
           git config --global user.email 'ReXiSp@users.noreply.github.com'
           git commit -am "Generate Hash"
